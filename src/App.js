@@ -15,7 +15,7 @@ function App() {
         </header>    
       
         <div class="content">
-            <p>React works in declarative code. react just maintains a tree for you.react contains a collection of reusable javscript code snippets for user interface.The syntax used by React components is called JSX (JavaScript XML). The idea is actually quite simple. A component renders content by returning some JSX. The JSX itself is usually HTML markup, mixed with custom tags for the React components. </p>
+            <p>React works in declarative code. react just maintains a tree for you.react contains a collection of reusable javscript code snippets for user interface.In simple cases..react works with virtal Dom .the html dom is pretty much an interface to modify the nodes in it.this means whenever we want to chanege content.we are modifying the dom and thats how react creats a single page website and mobile application </p>
         </div>
             
     </article>
@@ -28,7 +28,7 @@ function App() {
         </header>
 
         <div class="content">
-            <p>The state is an updatable structure that is used to contain data or information about the component and can change over time. The change in state can happen as a response to user action or system event.Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components.</p>
+            <p>props short for properties is an object of arbitrary inputs a React function component accepts as the first argument.state is data that changes over the lifetime of a specific instance of a React component. porps are passed into component.similar to how argument is passed to a funtion. props are only read only component.it allows passing data from one component to another </p>
         </div>
      
     </article>
@@ -38,7 +38,7 @@ function App() {
         </header>
         
         <div class="content">
-            <p>The useState() is a Hook that allows you to have state variables in functional components. React has two types of components, one is class components which are ES6 classes that extend from React and the other is functional components. Class components a Component and can have state and lifecycle methods: class Message extends React. The useState hook is a special function that takes the initial state as an argument and returns an array of two entries.  </p>
+            <p>use state is a hook that allows to have state vairables in a functional componenets.Hooks are fundamnetaly simpler stateful behaivior and side effect in user interfaces.this usestate hook is a special function that makes the initital state as an argument and returns and array of two entries  </p>
         </div>
 
     </article>
