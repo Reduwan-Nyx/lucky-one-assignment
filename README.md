@@ -1,4 +1,4 @@
 # Assignment 8 Lucky one
 
-This project Live Link [Create React App](https://magical-kitten-4454fa.netlify.app/).
+This project Live Link [live link](https://magical-kitten-4454fa.netlify.app/).
 
