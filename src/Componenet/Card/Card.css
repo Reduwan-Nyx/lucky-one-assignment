@@ -26,6 +26,29 @@
     justify-content: center; 
     
 }
+
+.button-cart{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    font-weight: 500;
+    border: 2px solid rgb(73, 31, 31);
+    border-radius: 5px ;
+    font-family: 'lato';
+    font-size: 13px;
+   
+}
+
+.cart-img img{
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
 .cart-info img{
     width: 100px;
     margin-left: 10px;

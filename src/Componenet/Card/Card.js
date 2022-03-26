@@ -5,12 +5,7 @@ import './Card.css'
 const Card = () => {
     const [products, setProducts] = useState([])
     const [cart,setCart] = useState([])
-    console.log(cart);
-    const [phone, setPhone] = useState([])
-
-
-
-
+    const [getOne, setgetOne] = useState([])
 
    
     useEffect( () => {
@@ -19,16 +14,27 @@ const Card = () => {
         .then(data => setProducts(data))
     }, [])
 
-    const handleAddToCart = (product, item) =>{
+    const handleAddToCart = (product) =>{
         
         const newCart =[...cart, product]
-       if(cart.length >= 3){
+       if(cart.length > 3){
            return alert('you cant add more')
        } else{
         setCart(newCart)
        }
+    
     }
 
+    const evenHandler = () =>{
+        let newCart = []
+        setCart(newCart)
+    }
+
+
+    const getProduct = (cart)=>{
+        let getCart = cart[Math.floor(Math.random() * cart.length)]
+        setgetOne(getCart)
+    }
    
 
     return (
@@ -38,7 +44,6 @@ const Card = () => {
                    products.map(product => <Product key={product.id}
                    product={product}
                    handleAddToCart={handleAddToCart}
-                   phone={phone}
                    ></Product>)
                }
             </div>
@@ -47,7 +52,10 @@ const Card = () => {
                 {
                     cart.map(item => <h4 className='cart-info' key={item.id}>{item.name} <img src={item.img} alt="" /></h4>)
                 }
-               
+                <button className='button-cart' onClick={()=> getProduct(cart)}>Choose one</button>
+                <p>{getOne.name}</p>  <p className='cart-img'><img  src={getOne.img} alt="" /></p>
+                
+                <button className='button-cart' onClick={evenHandler}>Choose again</button>
             </div>
                 
         </div>

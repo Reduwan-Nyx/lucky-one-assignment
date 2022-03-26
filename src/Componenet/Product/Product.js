@@ -21,6 +21,7 @@ const Product = (props) => {
                         <p className='btn-text'>Add To Cart</p>
                         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                     </button>
+                    
         </div>
     );
 };
